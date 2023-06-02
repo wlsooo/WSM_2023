@@ -1,3 +1,64 @@
 body{
     background-color: antiquewhite;
 }
+
+/* h1과 h2는 plum 배경색 */
+h1,
+h2{
+    /* background-color: plum; */
+}
+
+/* h1 자매 중 첫번째 h2만 plum 배경색 */
+h1 + h2 {
+    /* background-color: plum; */
+}
+
+/* h1의 자매인 모든 h2에 plum 배경색 */
+h1 ~ h2 {   /* ***h1은 적용되지 않고 h2만 적용된다 */
+    background-color: plum;
+}
+
+ul, 
+ol {
+    /* color: #333;
+    font-size: 32px; */
+} /* ul과 ol에만 속성을 주었는데도 li에 속성이 적용되는 이유는 ul과 ol은 속성이 계단식으로 적용되기 때문이다 */
+
+h5 ~ h6, 
+ul {
+    columns: #333;
+    font-size: 32px;
+}
+
+.korea {
+    color: skyblue;
+}
+.japan {
+    color: crimson;
+}
+.incheon {
+    color: darkblue;
+}
+.leader {
+    color: purple;
+}
+li:nth-child(5) { /* li가 5번째 자식일 때 */
+    text-decoration: underline;
+}
+/* 짝수 행: even, 홀수 행: odd */
+li:nth-child(even) {    /* 2n==even, 같은 결과값 */
+    background-color: #eee;
+}
+/* 5의 배수 행 */
+li:nth-child(5n) {
+    background-color: #aaa;
+}
+
+[type="text"] { /* type속성의 값이 “text”인 요소에 aqua 배경색 */
+    background-color: aqua;
+}
+/* 다음에 */
+/* 두번째 순서없는 리스트의 2번째 리스트 아이템의 윗줄(overline) */
+ul:nth-child(2) > li:nth-child(2) {
+    text-decoration: overline;
+}
