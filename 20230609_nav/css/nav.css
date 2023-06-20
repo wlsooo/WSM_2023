@@ -84,6 +84,7 @@ nav {
         backdrop-filter: blur(8px); /* 블러 효과 */
         height: 0;
         overflow: hidden;
+        transition: 0.4s;
     }
     .nav-link {
         display: block;
@@ -97,8 +98,7 @@ nav {
         visibility: visible;
         position: absolute; /* .nav-logo 가운데 정확히 위치 */
         right: 16px; /* 오른쪽 여백 16px 위치로 */
-    }
-    
+    }  
     /* .show-menu하면, menu-list 보이게 */
     /* .show-menu하면, .nav-toggle 버튼 X로 */
     .show-menu {
