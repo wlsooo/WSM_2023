@@ -22,7 +22,6 @@ nav_toggle.onclick = () => {
     //  햄버거메뉴 클릭하면, .nav-list에 .show-menu 보여주기 <-> 안보여주기
     navListUl.classList.toggle("show-menu");
 }
-
 //함수를 호출하는 것이 아닌 함수 그 자체를 onclick에 넣음
 /****************시험*****************/
 

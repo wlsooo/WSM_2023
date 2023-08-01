@@ -35,7 +35,7 @@ selector:hover              마우스 올렸을 때의 selector
 </pre>
 
 # 우선순위
-1. important
+1. !important
 2. ```<TAG style="">```
 3. #id
 4. .class
