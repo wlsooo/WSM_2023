@@ -1,12 +1,12 @@
 .bookshelf {
-    display: flex;
     margin-top: calc(44px + 100px); /* calc()함수는 +를 띄어야한다,  */
+    display: flex;
     gap: 80px;  /* row-gap: 20px; column-gap: 20px */
     flex-wrap: wrap;
     justify-content: center;
-    max-width: calc(150px * 4 + 80px * 3);
-    margin-left: auto;
-    margin-right: auto;
+    max-width: calc(150px * 4 + 80px * 3); /* 한줄에 4개까지만 보이게, 책 가로 넓이 150px*4 + 책 사이의 간격 80px*3 */
+    margin-left: auto; /* 가운데 맞춤 */
+    margin-right: auto; /* 가운데 맞춤 */
 }
 
 .row-container {
@@ -17,8 +17,15 @@
 
 .book-item {
     box-shadow: 0 16px 32px #ddd;
+    transition: all 0.2s;   /* hover일때만 아니라 마우스 벗어나는 경우도 자연스럽게 내려오게 */
 }
 
-.book-item > img {
+.book-item:hover {
+    box-shadow: 0 32px 64px #e0e0e0;  /* 그림자 더 밑으로, 더 흐리게, 더 밝게 */
+    transform: translateY(-8px);  /* 위로 8px 이동함 */
+}
+
+.book-item  img {
     width: 150px;
+    display: block;  /* 이미지 밑에 살짝 생기는 여백 문제 해결 */
 }
