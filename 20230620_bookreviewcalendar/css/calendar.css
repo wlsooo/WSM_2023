@@ -44,11 +44,12 @@ main {
     padding: 10px;
 }
 
-tablet/
+/* tablet */
 @media screen and (max-width: 720px) {
     
 }
 
+/* mobile */
 @media screen and (max-width: 540px) {
     main {
         margin-top: calc(44px + 40px);
