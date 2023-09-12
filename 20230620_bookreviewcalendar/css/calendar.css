@@ -34,6 +34,10 @@ main {
     justify-content: center;
     align-items: center; */
 }
+.date.item:nth-child(1) {
+    grid-column-start: 6;
+    background-color: rgb(247, 192, 244);
+}
 .review.flex-container {
     display: flex;
     flex-direction: column;
