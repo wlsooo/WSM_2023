@@ -37,7 +37,6 @@ main {
 /* 오늘에 맞는 요일로 이동하자 */
 .date.item:nth-child(1) {
     grid-column-start: 6;
-    background-color: rgb(247, 192, 244);
 }
 /* 토요일 파란색 글자로 */
 .date.item:nth-child(7n+2) {    /* 2+7n은 안됨. n이 먼저 와야한다 */
